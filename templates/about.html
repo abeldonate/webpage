@@ -1,0 +1,16 @@
+{% import "macros/page.html" as page_macros %}
+{% extends "base.html" %}
+
+{% block title %}{{ trans(key="about", lang=lang) }} {{config.extra.ogp.first_name}} {{config.extra.ogp.last_name}}{% endblock title %}
+
+
+{% block content %}
+<article class="post">
+        <header>
+            <h1>{{ page.title }}</h1>
+        </header>
+        <div class="content">
+            {{ page.content | safe }}
+        </div>
+</article>
+{% endblock content %}
