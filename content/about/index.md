@@ -4,9 +4,6 @@ render = true
 template = "about.html"
 +++
 
-<!--
-<img src="structuralism.png">
--->
 
 {{ img(path="@/about/structuralism.png", class="bordered", alt="", caption="Abstract nonsense I got playing arround with Stable Diffusion") }}
 
