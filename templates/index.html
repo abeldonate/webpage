@@ -4,7 +4,7 @@
 {% block content %}
 <main id="main" class="index" tabindex="-1">
     <section>
-        <img src="me.jpg" alt="me" width="100%"/>
+        <img src="{{ get_url(path='me.jpg') }}" alt="me" style="width:100%;" />
         <p>
             {{ config.description }}
         </p>
@@ -23,10 +23,10 @@
                 {% set subsec_link_path = subsec.name ~ "/" %}
             {% endif %}
             {% set subsec_section = get_section(path=subsec_path) %}
-            {% for page in subsec_section.pages | slice(end=subsec.recent_items) %}
+            {% for page in subsec_section.pages %}
                 {{ page_macros::page_listing(page=page) }}
             {% endfor %}
-            <p class="read-more"><a href={{ subsec_link_path }}>{{ trans(key=subsec.more_trans_key, lang=lang) }} ≫</a></p>
+            <p class="read-more"><a href={{ get_url(path=subsec_link_path) }}>{{ trans(key=subsec.more_trans_key, lang=lang) }} ≫</a></p>
         </section>
     {% endfor %}
     </section>
