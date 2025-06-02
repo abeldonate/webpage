@@ -3,7 +3,7 @@ title = "Walking trackmap"
 date = 2025-05-16
 
 [taxonomies]
-categories = ["music"]
+categories = ["software"]
 tags = ["programming"]
 +++
 
