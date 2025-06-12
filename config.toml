@@ -13,7 +13,9 @@ compile_sass = true
 build_search_index = false
 
 # When set to "true", a feed is automatically generated.
-# generate_feed = true
+generate_feeds = true
+# feed_filename = "rss.xml"
+feed_filenames = ["atom.xml"]
 
 # The taxonomies to be rendered for the site and their configuration of the default languages
 taxonomies = [
@@ -65,6 +67,7 @@ date_format = "%B %e, %Y"
 
 
 [extra]
+rss = true
 katex_enable = true
 katex_auto_render = true
 # Development environment. Used by the page macros to load remote content only when in "prod" mode
@@ -99,11 +102,8 @@ username = "abeldonate"
 dark = "dark-mode"
 email = "abel.donate.munoz@gmail.com"
 github = "abeldonate"
-linkedin = "a"
+linkedin = ""
 twitter = "abeldm3108"
-other = [
-    { name = "BTC", font_awesome = "fa-brands fa-btc", url = "https://www.bitcoin.com/" }
-]
 
 # CDN links
 [extra.cdn]
