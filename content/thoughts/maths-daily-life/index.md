@@ -4,7 +4,7 @@ date = 2026-05-05
 draft = false
 
 [taxonomies]
-categories = ["philosophy"]
+categories = ["philosophy", "mathematics"]
 +++
 
 This post stems from the frustration of not being able to give some examples in a pub conversation when I was asked the question "but do you use maths in your daily life?".
@@ -32,17 +32,16 @@ I am passionate about geography. I usually enjoy knowing (and estimating beforeh
 
 It turns out that if you repeat this enough times, the most common digit will be 1, followed by 2, and so on up to 9. This is called Benford's law, and this logarithmic behaviour is observed in every real-world dataset. The exact distribution that one gets is 
 
-(complete)
+{{ img(path="@/thoughts/maths-daily-life/images/Benford.png", class="bordered", alt="", caption="Distribution of first digit follows Benford's law") }}
 
 One of the most widely used applications of this phenomenon is in detecting tax fraud. Company invoices are regularly checked to see whether they follow Benford's law or, on the contrary, someone has been fabricating the figures.
 
 ### Choosing a mus partner
 Mus is a pretty popular Spanish card game (more info here), especially among the collective of unemployed Bonn students (more info here). Every semester we organise a tournament to decide who will hold the honour of being the king of mus. However, choosing a partner is always difficult, especially in your first semester. There are many people to choose from, so you decide on a strategy: you will play each day during the training sessions in the canteen with a different person, and at the end of each match you will decide whether you want to partner with them or not. How do you know when the right time to commit to a partner is?
 
-At first this seems like a tough question. There is a trade-off between choosing too quickly — missing potentially better partners who come later — and waiting too long, rejecting good partners in the hope that something better will come. However, maths comes to the rescue, telling you that you must systematically reject the first $N/e$ players, and then partner with the next one who is better than all of those first $N/e$ players[^1].
+At first this seems like a tough question. There is a trade-off between choosing too quickly — missing potentially better partners who come later — and waiting too long, rejecting good partners in the hope that something better will come. However, maths comes to the rescue, telling you that you must systematically reject the first $N/e$ players, where $e$ is a "magical constant" known as the Euler number, and then partner with the next one who is better than all of those first $N/e$ players[^1].
 
-(Formulas and computation)
-
+For knowing more about this phenomenon, I recommend reading [this article](https://en.wikipedia.org/wiki/Secretary_problem)
 
 
 ### Expected value at the railways
