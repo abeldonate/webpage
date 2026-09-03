@@ -102,7 +102,12 @@ dark = "dark-mode"
 email = "abel.donate.munoz@gmail.com"
 github = "abeldonate"
 linkedin = ""
+newsletter = "newsletter"
 twitter = "abeldm3108"
+
+[extra.newsletter]
+subscription_url = "https://newsletter.abeldonate.com/subscription/form"
+list_uuid = "23da6bac-c100-4c0e-9d79-1f52560dc6de"
 
 # CDN links
 [extra.cdn]

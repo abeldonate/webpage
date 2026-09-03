@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} - {{ config.title }}{% endblock %}
+
+{% block content %}
+<article class="post">
+    <header>
+        <h1>{{ page.title }}</h1>
+    </header>
+    <div class="content">
+        {{ page.content | safe }}
+        <form class="newsletter-form" action="{{ config.extra.newsletter.subscription_url }}" method="post">
+            <label for="newsletter-email">Email address</label>
+            <input id="newsletter-email" name="email" type="email" autocomplete="email" required>
+            <input name="l" type="hidden" value="{{ config.extra.newsletter.list_uuid }}">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</article>
+{% endblock content %}
