@@ -9,7 +9,7 @@ template = "about.html"
 
 &nbsp;
 
-Hello!, my name is Abel Doñate, I am currently studying Mathematics and Engineering Physics at Polytechnic University of Catalonia (UPC).
+Hello!, my name is Abel Doñate, I am currently studying a master in Mathematics at University of Bonn (Gemrany).
 
 My main interests are mathematics, music theory and thinking about useless stuff (the judgment of whether the first two are contained in the third is left to the reader). This webpage will be a reflection of that (sorry in advance).
 
